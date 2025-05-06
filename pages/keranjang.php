@@ -1,5 +1,5 @@
-
- <link rel="stylesheet" href="../Admin-HTML/css/headerkeranjang.css">
+<?php include '../views/headerkeranjang.php'; ?>
+ <link rel="stylesheet" href="../Esa-HTML/css/headerkeranjang.css">
 
  <?php include '../configdb.php'; ?>
 
@@ -10,21 +10,7 @@
     <div class="container">
         <header>
         </header>
-        <!--   <div class="listProduct">
-           <div class="item">
-           <img src="../Esa-HTML/images/maggot removebg.png" width="250px" height="150px">
-           <h2>Maggot Siap Pakai</h2><br><br>
-           <div class="harga">Rp.70.000</div>
-           <a href="maggot.php">
-          <button class="Masukan Keranjang">
-              Detail Produk
-          </button>
-        </a>
-        <button class="Masukan Keranjang">
-            Masukan Keranjang
-       </button>
-        </div>
-        -->
+
 
 <?php
 // Query untuk mengambil semua produk dari database
@@ -154,7 +140,14 @@ $productTypes = [
         <div class="btn">
             <button class="close">Tutup</button>
             <button class="checkOut">Check Out</button>
+
         </div>
     </div>
 	
 <?php include '../views/footerkeranjang.php'; ?>
+<script src="../Esa-HTML/js/keranjang.js"></script>
+<script src="../Esa-HTML/js/checkOut.js"></script>
+      
+
+
+ 
